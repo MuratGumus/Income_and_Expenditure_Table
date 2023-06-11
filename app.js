@@ -14,6 +14,7 @@ const temizleBtn = document.getElementById("temizle-btn");
 let gelirler = 0;
 let harcamaListesi = [];
 
+
 ekleFormu.addEventListener("submit", (e) => {
     e.preventDefault();
     gelirler = gelirler + Number(gelirInput.value);
