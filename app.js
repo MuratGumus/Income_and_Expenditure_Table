@@ -69,6 +69,7 @@ const harcamayiDomaYaz = ({ id, miktar, tarih, alan }) => {
     </tr>
     `;
 };
+
 harcamaBody.addEventListener("click", (e) => {
     if (e.target.classList.contains("fa-trash-can")) {
         e.target.parentElement.parentElement.remove();
