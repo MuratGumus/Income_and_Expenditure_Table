@@ -81,6 +81,7 @@ harcamaBody.addEventListener("click", (e) => {
     }
 });
 
+
 temizleBtn.addEventListener("click", () => {
     if (confirm("Silmek istedigine emin misiniz?")) {
         harcamaListesi = [];
