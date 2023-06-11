@@ -14,7 +14,6 @@ const temizleBtn = document.getElementById("temizle-btn");
 let gelirler = 0;
 let harcamaListesi = [];
 
-
 ekleFormu.addEventListener("submit", (e) => {
     e.preventDefault();
     gelirler = gelirler + Number(gelirInput.value);
@@ -62,13 +61,13 @@ const hesaplaVeGuncelle = () => {
 
 const harcamayiDomaYaz = ({ id, miktar, tarih, alan }) => {
     harcamaBody.innerHTML += `
-  <tr>
+    <tr>
     <td>${tarih}</td>
     <td>${alan}</td>
     <td>${miktar}</td>
     <td><i id=${id} class="fa-solid fa-trash-can text-danger"  type="button"></i></td>
-  </tr>
-  `;
+    </tr>
+    `;
 };
 harcamaBody.addEventListener("click", (e) => {
     if (e.target.classList.contains("fa-trash-can")) {
